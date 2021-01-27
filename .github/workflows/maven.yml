@@ -25,4 +25,8 @@ jobs:
         pwd
         mvn -B package --file pom.xml
         
-
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: BetterEnd
+        path: /home/runner/work/BetterEnd/BetterEnd
